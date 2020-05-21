@@ -171,6 +171,7 @@ color: #eee;
 main {
     margin-top: 300px;
     padding:0px;
+    background: #bbbbbb;
 
 }
 
@@ -182,7 +183,8 @@ main div h3, main div div h3 {
 main div.intro, main div.multi-section,  main div.multi-section-two {
     
     margin:0px auto;
-
+    margin-bottom: 500px;
+    background: #bbbbbb;
     padding: 50px;
     
 
@@ -195,7 +197,8 @@ div.multi-section, div.multi-section-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    background: #eee;
+    background: #fff;
+    margin-bottom: 150px;
    
 }
 div.multi-section img, div.multi-section-two img{
