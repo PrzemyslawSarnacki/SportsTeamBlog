@@ -218,6 +218,11 @@ div.multi-section-two {
 main div:last-of-type{
     text-align: center;
 }
+.last{
+ margin-top: 50px;
+ margin-bottom: 50px;
+    text-align: center;
+}
 
 
 footer {
