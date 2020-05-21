@@ -4,27 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { MainComponent } from './main/main.component';
-
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavComponent,
-    NavComponent,
-    HeaderComponent,
-    FooterComponent,
-    MainComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AnimateOnScrollModule
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
