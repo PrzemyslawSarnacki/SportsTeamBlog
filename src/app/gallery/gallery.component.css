@@ -1,0 +1,23 @@
+.gallery-row{
+	margin-top: 20px;
+}
+
+.gallery-button{
+	margin-top: 10px;
+}
+
+.gallery-section{
+  text-align: center;
+}
+
+.gallery-heading{
+  padding-bottom: 30px;
+}
+
+.gallery-heading h2{
+  font-size: 32px;
+}
+
+.gallery-heading h3{
+  font-size: 22px;
+}
