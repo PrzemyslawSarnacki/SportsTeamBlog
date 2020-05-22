@@ -94,6 +94,7 @@ nav ul:last-of-type li:last-of-type a {
     background: yellowgreen;
     padding: 10px;
     color: #fff;
+    text-shadow: 1px 1px 3px black;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -141,6 +142,7 @@ header .tagline a {
 .contact {
 background: yellowgreen;
 text-decoration:none;
+text-shadow: 2px 2px 1px black;
 color: #eee;
 }
 .learn-more {
@@ -183,7 +185,6 @@ main div h3, main div div h3 {
 main div.intro, main div.multi-section,  main div.multi-section-two {
     margin:0px auto;
     margin-bottom: 500px;
-    /* background: #bbbbbb; */
     padding: 50px;
 }
 main div.intro {
@@ -194,7 +195,6 @@ div.multi-section, div.multi-section-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    /* background: #fff; */
     margin-bottom: 150px;
    
 }
@@ -221,7 +221,7 @@ main div:last-of-type{
     text-align: center;
 }
 footer {
-    background: #eee;
+    background: rgb(70, 68, 68);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;        
     justify-items: center;
@@ -237,12 +237,13 @@ footer ul li {
     margin: 10px;
 }
 footer ul li a {
-    color: #111;
+    color: #bbb;
     text-decoration: none;
 }
 footer ul li:first-of-type {
     font-weight: bold;
     color: #ddd;
+
 }
 
 /*------------------------- MEDIA QUERIES ---------------------------*/
