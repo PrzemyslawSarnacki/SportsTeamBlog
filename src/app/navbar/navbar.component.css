@@ -1,9 +1,15 @@
 .sidenav-container {
   height: 100%;
 }
-
 .mat-toolbar.mat-primary {
-  position: static;
-  top: 0;
+  position: fixed;
+  top: 1;
   z-index: 1;
+}
+.navbar {
+justify-content: space-between;
+box-shadow: black;
+}
+span {
+padding-right: 1rem;
 }
