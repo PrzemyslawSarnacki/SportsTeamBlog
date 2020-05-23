@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AotSummaryResolver } from '@angular/compiler';
-
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,9 @@ import { AotSummaryResolver } from '@angular/compiler';
 })
 export class AppComponent {
   title = 'SportsTeamBlog';
+
+  ngOnInit(){
+    AOS.init();
+   }
+      
 }
