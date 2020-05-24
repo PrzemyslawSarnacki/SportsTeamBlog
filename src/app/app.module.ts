@@ -6,7 +6,6 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 // import { DirectivesModule } from './directives/directives.module';
 
-
 // import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,7 +14,6 @@ import { MainComponent } from './main/main.component';
 import { NavComponent } from './nav/nav.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -46,7 +44,6 @@ import { ReadyComponent } from './ready/ready.component';
     ReactiveFormsModule,
     CommonModule,
     BrowserModule,
-    AnimateOnScrollModule.forRoot(),
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
