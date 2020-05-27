@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:', {
+mongoose.connect('mongodb+srv://mongodb:mongodb@cluster0-9aikq.mongodb.net/test?retryWrites=true&w=majority', {
     promiseLibrary: require('bluebird'),
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -12,17 +12,17 @@ const bodyParser = require('body-parser');
 
 var app = express();
 //Middleware for CORS
-app.use(cors());
+// app.use(cors());
 //Middleware for bodyparsing using both json and urlencoding
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-var passport = require('passport');
+// var passport = require('passport');
 // var auth = require('./routes/auth');
 var category = require('./routes/category');
 var post = require('./routes/post');
 
-app.use(passport.initialize());
+// app.use(passport.initialize());
 // app.use('/api/auth', auth);
 app.use('/api/category', category);
 app.use('/api/post', post);

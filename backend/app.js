@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:', {
+mongoose.connect('mongodb+srv://mongodb:mongodb@cluster0-9aikq.mongodb.net/test?retryWrites=true&w=majority', {
     promiseLibrary: require('bluebird'),
     useNewUrlParser: true,
     useUnifiedTopology: true,
