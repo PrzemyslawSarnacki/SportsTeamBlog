@@ -9,21 +9,21 @@ router.get('/category', (req, res, next) => {
   });
   
   router.get('/bycategory/:id', (req, res, next) => {
-    Post.find({category: req.params.id}, function (err, posts) {
+    Post.find({category: req.params.id}, (err, posts) => {
       if (err) return next(err);
       res.json(posts);
     });
   });
   
   router.get('/post', (req, res, next) => {
-    Post.find(function (err, posts) {
+    Post.find((err, posts) => {
       if (err) return next(err);
       res.json(posts);
     });
   });
   
   router.get('/post/:id', (req, res, next) => {
-    Post.findById(req.params.id, function (err, post) {
+    Post.findById(req.params.id, (err, post) => {
       if (err) return next(err);
       res.json(post);
     });

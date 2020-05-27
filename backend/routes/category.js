@@ -10,28 +10,28 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res, next) => {
-    Category.findById(req.params.id, function (err, category) {
+    Category.findById(req.params.id, (err, category) => {
     if (err) return next(err);
         res.json(category);
     });
 });
 
 router.post('/', (req, res, next) => {
-    Category.create(req.body, function (err, category) {
+    Category.create(req.body, (err, category) => {
         if (err) return next(err);
         res.json(category);
     });
 });
 
 router.put('/:id', (req, res, next) => {
-    Category.findByIdAndUpdate(req.params.id, req.body, function (err, category) {
+    Category.findByIdAndUpdate(req.params.id, req.body, (err, category) => {
         if (err) return next(err);
         res.json(category);
     });
 });
 
 router.delete('/:id', (req, res, next) => {
-    Category.findByIdAndRemove(req.params.id, req.body, function (err, category) {
+    Category.findByIdAndRemove(req.params.id, req.body, (err, category) => {
         if (err) return next(err);
         res.json(category);
     });
