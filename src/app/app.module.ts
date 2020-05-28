@@ -22,7 +22,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 import { ReadyComponent } from './ready/ready.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -34,11 +38,13 @@ import { ReadyComponent } from './ready/ready.component';
     NavComponent,
     GalleryComponent,
     NavbarComponent,
-    ReadyComponent
+    ReadyComponent,
+    PostComponent
   ],
   imports: [
     BrowserAnimationsModule,
     FlexLayoutModule,
+    HttpClientModule,
     // DirectivesModule,
     FormsModule,
     ReactiveFormsModule,
@@ -51,6 +57,9 @@ import { ReadyComponent } from './ready/ready.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatProgressSpinnerModule,
+    MatTableModule
+    ,
   ],
   providers: [],
   bootstrap: [AppComponent]

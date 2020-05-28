@@ -8,11 +8,12 @@ mongoose.connect('mongodb+srv://mongodb:mongodb@cluster0-9aikq.mongodb.net/test?
 }).then(() =>  console.log('Mongodb connection successful'))
   .catch((err) => console.error(err));
 var express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 
 var app = express();
 //Middleware for CORS
-// app.use(cors());
+app.use(cors());
 //Middleware for bodyparsing using both json and urlencoding
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
