@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -15,6 +17,7 @@ import { NavComponent } from './nav/nav.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
+
 import { LayoutModule } from '@angular/cdk/layout';
 import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -35,6 +38,7 @@ import { PostAddComponent } from './post/post-add/post-add.component';
 import { PostDetailsComponent } from './post/post-details/post-details.component';
 import { PostEditComponent } from './post/post-edit/post-edit.component';
 import { CategoryComponent } from './category/category.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -57,6 +61,7 @@ import { CategoryComponent } from './category/category.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     HttpClientModule,
+    AppRoutingModule,
     // DirectivesModule,
     FormsModule,
     ReactiveFormsModule,
@@ -75,6 +80,21 @@ import { CategoryComponent } from './category/category.component';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+  ],
+  exports: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
+    NavComponent,
+    GalleryComponent,
+    NavbarComponent,
+    ReadyComponent,
+    PostComponent,
+    PostAddComponent,
+    PostDetailsComponent,
+    PostEditComponent,
+    CategoryComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
