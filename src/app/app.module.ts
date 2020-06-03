@@ -50,6 +50,7 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     GalleryComponent,
     NavbarComponent,
+    HomeComponent,
     ReadyComponent,
     PostComponent,
     PostAddComponent,

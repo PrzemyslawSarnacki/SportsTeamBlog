@@ -20,14 +20,14 @@
         </mat-form-field>
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Post Title" formControlName="postTitle"
-                  [errorStateMatcher]="matcher">
+                  [errorStateMatcher]="matcher"/>
           <mat-error>
             <span *ngIf="!postForm.get('postTitle').valid && postForm.get('postTitle').touched">Please enter Post Title</span>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Post Author" formControlName="postAuthor"
-                  [errorStateMatcher]="matcher">
+                  [errorStateMatcher]="matcher"/>
           <mat-error>
             <span *ngIf="!postForm.get('postAuthor').valid && postForm.get('postAuthor').touched">Please enter Post Author</span>
           </mat-error>
@@ -48,14 +48,14 @@
         <div class="button-row">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Post Reference" formControlName="postReference"
-                  [errorStateMatcher]="matcher">
+                  [errorStateMatcher]="matcher"/>
           <mat-error>
             <span *ngIf="!postForm.get('postReference').valid && postForm.get('postReference').touched">Please enter Post Ref</span>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <input matInput placeholder="Post Image URL" formControlName="postImgUrl"
-                    [errorStateMatcher]="matcher">
+                    [errorStateMatcher]="matcher"/>
             <mat-error>
               <span *ngIf="!postForm.get('postImgUrl').valid && postForm.get('postImgUrl').touched">Please enter Post Image URL</span>
             </mat-error>
