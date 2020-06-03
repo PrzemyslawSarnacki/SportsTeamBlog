@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../post.service';
+import { Post } from './post';
+
 
 @Component({
   selector: 'app-gallery',
@@ -7,9 +10,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  
+  displayedColumns: string[] = ['postTitle', 'postDesc'];
+  data: Post[] = [];
+  isLoadingResults = true;
+
+  constructor(private api: PostService) { }
 
   ngOnInit(): void {
+    this.api.getPosts()
+    .subscribe((res: any) => {
+      this.data = res;
+      console.log("ok data",this.data);
+      this.isLoadingResults = false;
+    }, err => {
+      console.log(err);
+      this.isLoadingResults = false;
+    });
   }
 
 }

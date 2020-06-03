@@ -27,6 +27,9 @@ import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { ReadyComponent } from './ready/ready.component';
 import { PostComponent } from './post/post.component';
+import { PostAddComponent } from './post/post-add/post-add.component';
+import { PostDetailsComponent } from './post/post-details/post-details.component';
+import { PostEditComponent } from './post/post-edit/post-edit.component';
 
 
 @NgModule({
@@ -39,7 +42,10 @@ import { PostComponent } from './post/post.component';
     GalleryComponent,
     NavbarComponent,
     ReadyComponent,
-    PostComponent
+    PostComponent,
+    PostAddComponent,
+    PostDetailsComponent,
+    PostEditComponent
   ],
   imports: [
     BrowserAnimationsModule,
