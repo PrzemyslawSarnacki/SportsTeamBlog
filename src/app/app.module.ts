@@ -16,20 +16,25 @@ import { GalleryComponent } from './gallery/gallery.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule} from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
 import { ReadyComponent } from './ready/ready.component';
 import { PostComponent } from './post/post.component';
 import { PostAddComponent } from './post/post-add/post-add.component';
 import { PostDetailsComponent } from './post/post-details/post-details.component';
 import { PostEditComponent } from './post/post-edit/post-edit.component';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -45,7 +50,8 @@ import { PostEditComponent } from './post/post-edit/post-edit.component';
     PostComponent,
     PostAddComponent,
     PostDetailsComponent,
-    PostEditComponent
+    PostEditComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -64,8 +70,11 @@ import { PostEditComponent } from './post/post-edit/post-edit.component';
     MatIconModule,
     MatListModule,
     MatProgressSpinnerModule,
-    MatTableModule
-    ,
+    MatTableModule,
+    RouterModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
