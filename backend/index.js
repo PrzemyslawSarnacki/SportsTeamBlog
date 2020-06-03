@@ -7,6 +7,7 @@ mongoose.connect('mongodb+srv://mongodb:mongodb@cluster0-9aikq.mongodb.net/test?
     useCreateIndex: true
 }).then(() =>  console.log('Mongodb connection successful'))
   .catch((err) => console.error(err));
+mongoose.set('useFindAndModify', false);
 var express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
